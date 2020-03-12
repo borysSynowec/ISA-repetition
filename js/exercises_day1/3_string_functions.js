@@ -73,7 +73,7 @@ const NewString = () => {
     }
 
     let new1 = name1();
-    let new2 = name2()
+    let new2 = name2();
     console.log(new1);
     console.log(new2);
 }
