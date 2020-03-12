@@ -97,10 +97,16 @@ console.log(deltaCounting(2.12,1.123123,3.9));
       przy każdym wywołaniu.
     - następnie wywołają tą funkcję 3 razy i wyświetl w konsoli wartość zmiennej counter. */
 
+let counter = 0;
+const addingFunction =()=>{
+  counter=counter+1;
+  
+};
+addingFunction();
+addingFunction();
+addingFunction();
 
-
-
-
+console.log(counter);
 
 
 
