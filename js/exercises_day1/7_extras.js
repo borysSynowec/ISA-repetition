@@ -10,6 +10,13 @@
  -----------------------------------------------------
  CODE GOES BELOW */
 
+const limitedNumber =(min, max)=>{
+  max = Math.ceil(max)
+  min = Math.floor(min)
+  return Math.floor(Math.random()*(max - min))+ min;
+}
+console.log(limitedNumber(10,100));
+
 /*
  -----------------------------------------------------
 2. Napisz funkcję, która jako parametr przyjmuje Twoje imię i nazwisko,
@@ -18,6 +25,12 @@
 
  -----------------------------------------------------
  CODE GOES BELOW */
+const nameInitials = (name, secondName)=> {
+let firstLetter = name.charAt(0);
+let secondLetter = secondName.charAt(0);
+return firstLetter + '.'+secondLetter
+}
+ console.log(nameInitials('Marek','Kowalski'));
 
 /*
  -----------------------------------------------------
@@ -34,6 +47,10 @@
 
  -----------------------------------------------------
  CODE GOES BELOW */
+
+const funct = (val1, val2)=>{
+  
+}
 
 /*
  -----------------------------------------------------
