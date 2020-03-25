@@ -44,23 +44,62 @@ for (i = 0; i < drinks.length; i++) {
 }
 console.log(totalDrinksPriceFixed)
 
-// TODO.5. Za pomocą pętli, doklej jednostkę PLN do cen, zastosuj dekremenację!
+// TODO.5. Za pomocą pętli, doklej jednostkę PLN do cen
 
+let ddrinks = [
+  { name: 'Vodka  ', price: 19.99 },
+  { name: 'Whisky ', price: 40.00 },
+  { name: 'Prosseco', price: 35.99 },
+  { name: 'Beer  ', price: 3.20 },
+  { name: '  Vine', price: 16.50 },
+  { name: 'Gin ', price: 23.30 }]
+  ;
 for (i = 0; i < drinks.length; i++) {
-
+  ddrinks[i].price = ddrinks[i].price + ' PLN'
 }
+console.log(ddrinks)
 
 
 // TODO.6: Za pomocą pętli, oczyść nazwy drinków z white-spaces
 
 for (i = 0; i < drinks.length; i++) {
   let newDrinks = drinks[i].name.trim()
-  console.log(newDrinks); 
+  console.log(newDrinks);
 }
 
 
 // TODO.7: Puść pętlę po tablicy drinks i do każdego obiektu (drinka) dopisz nowe pole "id":
 //    - obiekt z indeksem zero ma mieć ID 1, i tak dalej, wykorzystaj dostęp do licznika pętli *
+
+
+// let dddrinks =[
+//   { name: 'Vodka  ', price: 19.99 },
+//   { name: 'Whisky ', price: 40.00 },
+//   { name: 'Prosseco', price: 35.99 },
+//   { name: 'Beer  ', price: 3.20 },
+//   { name: '  Vine', price: 16.50 },
+//   { name: 'Gin ', price: 23.30 }]
+// ;
+// for(i=0;i<dddrinks.length; i++){
+//   ddrinks[i] = (dddrinks[i] ['id'] = '1')  
+// }
+// console.log(dddrinks)
+
+let dddrinks = [
+  { name: 'Vodka  ', price: 19.99 },
+  { name: 'Whisky ', price: 40.00 },
+  { name: 'Prosseco', price: 35.99 },
+  { name: 'Beer  ', price: 3.20 },
+  { name: '  Vine', price: 16.50 },
+  { name: 'Gin ', price: 23.30 }]
+  ;
+
+for (i = 0; i < dddrinks.length; i++) {
+
+  ddrinks[i] = (dddrinks[i]['id'] = i+1)
+}
+console.log(dddrinks)
+
 
 
 
@@ -71,13 +110,10 @@ const avaragePrice = (drinks) => {
   for (i = 0; i < drinks.length; i++) {
     totalPrice += drinks[i].price;
   }
-  return 'avarage price is: '+ (totalPrice / drinks.length).toFixed(2);
+  return 'avarage price is: ' + (totalPrice / drinks.length).toFixed(2);
 }
 console.log(avaragePrice(drinks));
 
-
-/* TODO.9: Za pomocą pętli while, wyświetl console.log z ceną i nazwą każdego drinka
- */
 
 
 
