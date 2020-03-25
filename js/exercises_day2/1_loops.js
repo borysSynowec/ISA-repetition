@@ -72,18 +72,6 @@ for (i = 0; i < drinks.length; i++) {
 //    - obiekt z indeksem zero ma mieć ID 1, i tak dalej, wykorzystaj dostęp do licznika pętli *
 
 
-// let dddrinks =[
-//   { name: 'Vodka  ', price: 19.99 },
-//   { name: 'Whisky ', price: 40.00 },
-//   { name: 'Prosseco', price: 35.99 },
-//   { name: 'Beer  ', price: 3.20 },
-//   { name: '  Vine', price: 16.50 },
-//   { name: 'Gin ', price: 23.30 }]
-// ;
-// for(i=0;i<dddrinks.length; i++){
-//   ddrinks[i] = (dddrinks[i] ['id'] = '1')  
-// }
-// console.log(dddrinks)
 
 let dddrinks = [
   { name: 'Vodka  ', price: 19.99 },
@@ -96,7 +84,7 @@ let dddrinks = [
 
 for (i = 0; i < dddrinks.length; i++) {
 
-  ddrinks[i] = (dddrinks[i]['id'] = i+1)
+  dddrinks[i]['id'] = i+1
 }
 console.log(dddrinks)
 
