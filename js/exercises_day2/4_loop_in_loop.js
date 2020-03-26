@@ -24,8 +24,8 @@ for (i = 0; i < attractions.length; i++) {
 ///////////////////////////////////
 //3//
     
-        
-       console.log(attractions.flat(Infinity).toString())
-    
+const attracitonsList2 = () => {
+      return attractions.flat(Infinity).toString()
+}
     
 ///////////////////////////
