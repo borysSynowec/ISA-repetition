@@ -11,21 +11,15 @@ var powers = {
     strength: 200
 };
 
-let supermanWithPowers = Object.assign ({},superman, powers);
-
+let supermanWithPowers = Object.assign (superman, powers);
+console.log(supermanWithPowers)
 
 /* 2. Puść pętlę po obiekcie supermanWithPowers i wyświetl w konsoli klucze oraz wartości.*/
 
-let key = Object.keys(supermanWithPowers);
-
-
 for (let key in supermanWithPowers) {
     console.log(key);
-    console.log(supermanWithPowers[key]);
+    // console.log(supermanWithPowers[key])
 }
-
-
-
 
 
 /* 3. Z użyciem Object.keys stwórz tablicę o nazwie supermanKeys, która trzyma klucze obiektu
@@ -51,4 +45,4 @@ var woman = {
     hasHands: true
 };
 
-console.log(_.isEqual(man, woman);
+console.log(isEqual(woman, man))
