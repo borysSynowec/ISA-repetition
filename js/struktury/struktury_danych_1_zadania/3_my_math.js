@@ -6,4 +6,16 @@ wzory:  peekY = - delta/4a
         Wykorzystaj stworzony obiekt i wywołaj jego metody z odpowiednimi parametrami, sprwadz czy zwraca dobre wartości
  */
 
-let names = ['alek','bartek','jarek','marek','arek','jurek'], 
+MyMath = {
+        a: 3,
+        b: 2,
+        c: 1,
+
+
+        peekZ: function () { return -(this.a) / 2 * (this.b) },  
+        peekY: function () { return -(this.delta()) / 4 * (this.a) },
+        delta: function () { return 2 * (this.b) - 4 * (this.a * this.c) },
+}
+console.log(MyMath.peekZ())
+console.log(MyMath.peekY())
+console.log(MyMath.delta())
