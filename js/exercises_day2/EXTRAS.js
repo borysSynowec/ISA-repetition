@@ -114,8 +114,8 @@ const przerobkaZdania3 = () => {
     let splitZdanie = zdanie3.toLowerCase().split(' ');
 
     for (i = 0; i < splitZdanie.length; i++) {
-        splitZdanie[i] = splitZdanie[i].charAt(0).toUpperCase()+ splitZdanie[i].substring(1);
+        splitZdanie[i] = splitZdanie[i].charAt(0).toUpperCase() + splitZdanie[i].substring(1);
     }
     return splitZdanie.join(' ');
-
 }
+console.log(przerobkaZdania3())
