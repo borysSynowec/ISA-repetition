@@ -5,12 +5,13 @@ var users = [
 
 //1 MAP -> zmapowanie tablicy do innej tablicy, która posiada właściwość fullName ('Adam Nowak')
 
-var usersWithFullNames = users.map(function(user) {
+var usersWithFullNames1 = users.map(function(user) {
     user.fullName = user.firstName + ' ' + user.lastName; // mutacja userów w tablicy users, SIDE EFFECT : [
    return user;
 });
 
-var usersWithFullNames = users.map(function(user) {
+
+var usersWithFullNames2 = users.map(function(user) {
     return {
         ...user, // brak mutacji, spread operator, poprawniejsze wyjście bo nie modyfikujemy oryginalnej tablicy
         fullName: user.firstName + ' ' + user.lastName // doklejam potrzebny klucz
